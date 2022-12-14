@@ -1,0 +1,70 @@
+Method: Divide the difference of the elevations by the length of the runway.
+Multiply that number by 100 to obtain the slope of the runway
+
+Note:Some runways have dips or humps in the middle which is not reflected in the grade percentage.
+
+Shortest Runways
+'LGA'	'New York'		
+'AUA'	'Aruba'			
+'CTS'	'Sapporo'		
+'PTY'	'Panama City (PA)'	
+'BOS'	'Boston'		
+'PUJ'	'Punta Cana'		
+'DUB'	'Dublin'		
+'SJU'	'San Juan (PR)'		
+'MLE'	'Male'			
+'EZE'	'Buenos Aires'		
+
+Highest Runways
+'GRU'	'Sao Paulo'		~0%	09L--27R	https://www.scribd.com/document/344048825/Sbgr-Adc-sbgr-Adc-20161013
+'AMM'	'Amman'			~0% 	08R--26L	http://www.uvairlines.com/admin/resources/OJAI.pdf
+'ALA'	'Almaty'		~0%	05L--23R	http://www.uvairlines.com/admin/resources/UAAA.pdf
+'RUH'	'Riyadh'		0.1%	15R--33L	http://www.uvairlines.com/admin/resources/OERK.pdf
+'HYD'	'Hyderabad'		0.4%	09R--27L	https://ww2.jeppesen.com/wp-content/uploads/2021/06/VOHS_APT_and_ABP_Charts.pdf
+'MAD'	'Madrid'		0.1%	18R--36L	www.uvairlines.com/admin/resources/LEMD.pdf
+'SCL'	'Santiago (CL)'		~0%	17R--35L	http://www.uvairlines.com/admin/resources/SCEL.pdf
+'MUC'	'Munich'		0.1%	08R--26L	http://www.uvairlines.com/admin/resources/EDDM.pdf
+'ZRH'	'Zurich'		~0%	16--34		http://www.uvairlines.com/admin/resources/LSZH.pdf
+'GVA'	'Geneva'		0.3%	04--22 (05--23?)www.uvairlines.com/admin/resources/LSGG.pdf
+
+
+
+
+
+%% FROM MATLAB: %%
+
+TenShortestRunways =
+  10×5 table
+
+     CODE            CityName          CommercialPotential    elevation    longestRunwayLength
+    _______    ____________________    ___________________    _________    ___________________
+
+    {'LGA'}    {'New York'        }        {'Medium'}             21               7000       
+    {'AUA'}    {'Aruba'           }        {'Medium'}             60               9000       
+    {'CTS'}    {'Sapporo'         }        {'Medium'}             82               9840       
+    {'PTY'}    {'Panama City (PA)'}        {'Medium'}            135              10006       
+    {'BOS'}    {'Boston'          }        {'High'  }             20              10083       
+    {'PUJ'}    {'Punta Cana'      }        {'Medium'}             47              10171       
+    {'DUB'}    {'Dublin'          }        {'High'  }            242              10203       
+    {'SJU'}    {'San Juan (PR)'   }        {'Medium'}              9              10400       
+    {'MLE'}    {'Male'            }        {'Medium'}              6              10499       
+    {'EZE'}    {'Buenos Aires'    }        {'Medium'}             67              10827       
+
+
+TenHighestRunways =
+  10×5 table
+
+     CODE          CityName         CommercialPotential    elevation    longestRunwayLength
+    _______    _________________    ___________________    _________    ___________________
+
+    {'GRU'}    {'Sao Paulo'    }        {'High'  }           2459              12139       
+    {'AMM'}    {'Amman'        }        {'Medium'}           2395              12008       
+    {'ALA'}    {'Almaty'       }        {'Medium'}           2234              14764       
+    {'RUH'}    {'Riyadh'       }        {'High'  }           2049              13796       
+    {'HYD'}    {'Hyderabad'    }        {'Medium'}           2024              13976       
+    {'MAD'}    {'Madrid'       }        {'High'  }           1998              13711       
+    {'SCL'}    {'Santiago (CL)'}        {'High'  }           1555              12303       
+    {'MUC'}    {'Munich'       }        {'High'  }           1487              13123       
+    {'ZRH'}    {'Zurich'       }        {'High'  }           1417              12139       
+    {'GVA'}    {'Geneva'       }        {'Medium'}           1411              12795       
+

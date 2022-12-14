@@ -1,0 +1,68 @@
+NOTE: "Rarely above X data" from WatherSpark website in degF:
+https://weatherspark.com/y/30268/Average-Weather-in-S%C3%A3o-Paulo-Brazil-Year-Round
+
+Shortest Runways
+'LGA'	'New York'		93
+'AUA'	'Aruba'			93
+'CTS'	'Sapporo'		84
+'PTY'	'Panama City (PA)'	94
+'BOS'	'Boston'		91
+'PUJ'	'Punta Cana'		90
+'DUB'	'Dublin'		72
+'SJU'	'San Juan (PR)'		91
+'MLE'	'Male'			90
+'EZE'	'Buenos Aires'		94
+
+Highest Runways
+'GRU'	'Sao Paulo'		89
+'AMM'	'Amman'			99
+'ALA'	'Almaty'		96
+'RUH'	'Riyadh'		113
+'HYD'	'Hyderabad'		105
+'MAD'	'Madrid'		99
+'SCL'	'Santiago (CL)'		90
+'MUC'	'Munich'		87
+'ZRH'	'Zurich'		88	
+'GVA'	'Geneva'		89
+
+
+
+
+
+%% FROM MATLAB: %%
+
+TenShortestRunways =
+  10×5 table
+
+     CODE            CityName          CommercialPotential    elevation    longestRunwayLength
+    _______    ____________________    ___________________    _________    ___________________
+
+    {'LGA'}    {'New York'        }        {'Medium'}             21               7000       
+    {'AUA'}    {'Aruba'           }        {'Medium'}             60               9000       
+    {'CTS'}    {'Sapporo'         }        {'Medium'}             82               9840       
+    {'PTY'}    {'Panama City (PA)'}        {'Medium'}            135              10006       
+    {'BOS'}    {'Boston'          }        {'High'  }             20              10083       
+    {'PUJ'}    {'Punta Cana'      }        {'Medium'}             47              10171       
+    {'DUB'}    {'Dublin'          }        {'High'  }            242              10203       
+    {'SJU'}    {'San Juan (PR)'   }        {'Medium'}              9              10400       
+    {'MLE'}    {'Male'            }        {'Medium'}              6              10499       
+    {'EZE'}    {'Buenos Aires'    }        {'Medium'}             67              10827       
+
+
+TenHighestRunways =
+  10×5 table
+
+     CODE          CityName         CommercialPotential    elevation    longestRunwayLength
+    _______    _________________    ___________________    _________    ___________________
+
+    {'GRU'}    {'Sao Paulo'    }        {'High'  }           2459              12139       
+    {'AMM'}    {'Amman'        }        {'Medium'}           2395              12008       
+    {'ALA'}    {'Almaty'       }        {'Medium'}           2234              14764       
+    {'RUH'}    {'Riyadh'       }        {'High'  }           2049              13796       
+    {'HYD'}    {'Hyderabad'    }        {'Medium'}           2024              13976       
+    {'MAD'}    {'Madrid'       }        {'High'  }           1998              13711       
+    {'SCL'}    {'Santiago (CL)'}        {'High'  }           1555              12303       
+    {'MUC'}    {'Munich'       }        {'High'  }           1487              13123       
+    {'ZRH'}    {'Zurich'       }        {'High'  }           1417              12139       
+    {'GVA'}    {'Geneva'       }        {'Medium'}           1411              12795       
+
